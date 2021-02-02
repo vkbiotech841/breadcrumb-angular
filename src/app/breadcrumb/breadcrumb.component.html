@@ -1,0 +1,11 @@
+<div class="row" *ngIf='breadCrumbData.length'>
+    <div class="col-sm-12">
+        <span *ngFor='let i of breadCrumbData; let k = index'>
+            <label style="cursor: pointer;" [ngClass]="{'font-weight-bold': k == breadCrumbData.length - 1}"
+                (click)='gotoPage(i)'>
+                {{ i.label }}
+            </label>
+            <label *ngIf='k < breadCrumbData.length -1' style="margin: 0px 0.5rem;"> > </label>
+        </span>
+    </div>
+</div>

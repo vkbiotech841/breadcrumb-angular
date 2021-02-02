@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="container-fluid">
+
+        <div style="margin-top: 10%;">
+            <hr>
+            <app-breadcrumb></app-breadcrumb>
+            <hr>
+            <div>Parent</div>
+        </div>
+        <div>
+            <button class="btn btn-secondary" [routerLink]="['/home/parent']">
+                Go To Parent
+            </button>
+            <button class="btn btn-secondary" [routerLink]="['/home/parent/first-child']">
+                Go To First-child
+            </button>
+            <button class="btn btn-secondary" [routerLink]="['/home/parent/first-child/second-child']">
+                Go To second-child
+            </button>
+            <button class="btn btn-secondary" [routerLink]="['/home/parent/first-child/second-child/third-child']">
+                Go To First-child
+            </button>
+        </div>
+
+
+    </div>
+</div>
